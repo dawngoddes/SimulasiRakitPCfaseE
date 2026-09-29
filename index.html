@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LKPD Simulasi Rakit PC</title>
+<style>
+body{font-family:Arial,sans-serif;background:#f1f5f9;color:#1e293b;margin:0}
+.container{max-width:1000px;margin:25px auto;padding:15px}
+.card{background:#fff;padding:22px;margin-bottom:18px;border-radius:14px;box-shadow:0 3px 12px #0001}
+.header{background:#2563eb;color:white;text-align:center}
+h1{margin:5px} h2{color:#1d4ed8}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+input,textarea{width:100%;box-sizing:border-box;padding:10px;border:1px solid #cbd5e1;border-radius:8px;font-family:inherit}
+textarea{min-height:80px}
+label{font-weight:bold;display:block;margin:8px 0 5px}
+table{width:100%;border-collapse:collapse}
+th,td{border:1px solid #cbd5e1;padding:8px;vertical-align:top}
+th{background:#eff6ff}
+.note{background:#eff6ff;padding:12px;border-left:5px solid #2563eb;border-radius:6px}
+.task{background:#f8fafc;padding:14px;margin:12px 0;border-radius:8px}
+.budget{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.budget div{border:1px solid #cbd5e1;padding:14px;border-radius:9px}
+.money{font-weight:bold;color:#16a34a}
+button,.link{border:0;padding:11px 16px;border-radius:8px;font-weight:bold;cursor:pointer;text-decoration:none;display:inline-block;margin:4px}
+.primary{background:#2563eb;color:white}.gray{background:#e2e8f0}.danger{background:#fee2e2;color:#991b1b}
+@media(max-width:700px){.grid,.budget{grid-template-columns:1fr}}
+@media print{.no-print{display:none}.card{box-shadow:none;border:1px solid #ddd}}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="card header">
+<h1>LKPD SIMULASI RAKIT PC</h1>
+<p>Menggunakan Simulasi Enterkomputer</p>
+<p>Kenali Komponen → Pilih → Susun → Analisis</p>
+</div>
+
+<div class="card">
+<h2>1. Identitas Kelompok</h2>
+<div class="grid">
+<div><label>Nama Kelompok</label><input placeholder="Tuliskan nama kelompok"></div>
+<div><label>Kelas</label><input placeholder="Contoh: XI F"></div>
+<div><label>Anggota 1</label><input placeholder="Tuliskan nama anggota 1"></div>
+<div><label>Anggota 2</label><input placeholder="Tuliskan nama anggota 2"></div>
+</div>
+</div>
+
+<div class="card">
+<h2>2. Tujuan Pembelajaran</h2>
+<ul>
+<li>Mengenali fungsi komponen utama komputer.</li>
+<li>Memahami hubungan antar-komponen PC.</li>
+<li>Memilih komponen PC sesuai kebutuhan.</li>
+<li>Menyusun rancangan PC melalui simulasi.</li>
+<li>Menganalisis harga dan spesifikasi komputer.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>3. Misi Kelompok</h2>
+<div class="note">Buka simulasi PC Enterkomputer, kemudian buat rancangan komputer sesuai kebutuhan yang diberikan guru.</div>
+<ol>
+<li>Buka simulasi Enterkomputer.</li>
+<li>Pilih komponen PC satu per satu.</li>
+<li>Perhatikan spesifikasi setiap komponen.</li>
+<li>Catat pilihan komponen dan harganya.</li>
+<li>Pastikan komponen dapat digunakan bersama.</li>
+<li>Catat total harga PC.</li>
+</ol>
+<a class="link primary" href="https://www.enterkomputer.com/simulasi" target="_blank">Buka Simulasi Enterkomputer</a>
+</div>
+
+<div class="card">
+<h2>4. Komponen PC yang Dipilih</h2>
+<table>
+<tr><th>No.</th><th>Komponen</th><th>Produk / Spesifikasi</th><th>Harga</th><th>Alasan Memilih</th></tr>
+<tr><td>1</td><td>Processor / CPU</td><td><input></td><td><input placeholder="Rp"></td><td><textarea placeholder="Alasan..."></textarea></td></tr><tr><td>2</td><td>Motherboard</td><td><input></td><td><input placeholder="Rp"></td><td><textarea placeholder="Alasan..."></textarea></td></tr><tr><td>3</td><td>RAM</td><td><input></td><td><input placeholder="Rp"></td><td><textarea placeholder="Alasan..."></textarea></td></tr><tr><td>4</td><td>Storage</td><td><input></td><td><input placeholder="Rp"></td><td><textarea placeholder="Alasan..."></textarea></td></tr><tr><td>5</td><td>GPU / VGA</td><td><input></td><td><input placeholder="Rp"></td><td><textarea placeholder="Alasan..."></textarea></td></tr><tr><td>6</td><td>PSU</td><td><input></td><td><input placeholder="Rp"></td><td><textarea placeholder="Alasan..."></textarea></td></tr><tr><td>7</td><td>Case</td><td><input></td><td><input placeholder="Rp"></td><td><textarea placeholder="Alasan..."></textarea></td></tr><tr><td>8</td><td>CPU Cooler</td><td><input></td><td><input placeholder="Rp"></td><td><textarea placeholder="Alasan..."></textarea></td></tr>
+</table>
+</div>
+
+<div class="card">
+<h2>5. Analisis Rancangan PC</h2>
+<div class="task"><label>Kebutuhan utama PC kelompok:</label><textarea></textarea></div>
+<div class="task"><label>Processor yang digunakan dan alasan:</label><textarea></textarea></div>
+<div class="task"><label>RAM yang digunakan dan alasan:</label><textarea></textarea></div>
+<div class="task"><label>Jenis storage dan alasan:</label><textarea></textarea></div>
+<div class="task"><label>Apakah menggunakan GPU tambahan? Jelaskan:</label><textarea></textarea></div>
+<div class="task"><label>Hal paling penting saat memilih komponen PC:</label><textarea></textarea></div>
+</div>
+
+<div class="card">
+<h2>6. Tantangan Anggaran</h2>
+<p>Pilih salah satu kebutuhan PC dan buat rancangan sesuai batas anggaran.</p>
+<div class="budget">
+<div><h3>PC Belajar & Office</h3><p class="money">Rp6.000.000</p><p>Belajar, office, browsing, dan presentasi.</p></div>
+<div><h3>PC Desain Grafis</h3><p class="money">Rp8.000.000</p><p>Desain, editing gambar, dan pekerjaan kreatif.</p></div>
+<div><h3>PC Gaming</h3><p class="money">Rp12.000.000</p><p>Gaming dan multimedia.</p></div>
+</div>
+<div class="task"><label>Jenis PC yang dipilih:</label><input></div>
+<div class="task"><label>Total harga rancangan:</label><input placeholder="Rp..."></div>
+<div class="task"><label>Apakah sesuai anggaran? Jelaskan:</label><textarea></textarea></div>
+</div>
+
+<div class="card">
+<h2>7. Tantangan Upgrade</h2>
+<div class="task"><label>Komponen apa yang akan di-upgrade terlebih dahulu?</label><textarea></textarea></div>
+<div class="task"><label>Mengapa komponen tersebut perlu di-upgrade?</label><textarea></textarea></div>
+<div class="task"><label>Komponen apa yang kemungkinan tetap digunakan?</label><textarea></textarea></div>
+</div>
+
+<div class="card">
+<h2>8. Kesimpulan</h2>
+<textarea placeholder="Tuliskan kesimpulan kelompok..."></textarea>
+</div>
+
+<div class="card">
+<h2>9. Refleksi Kelompok</h2>
+<div class="task"><label>Hal baru yang kami pelajari:</label><textarea></textarea></div>
+<div class="task"><label>Bagian yang paling sulit:</label><textarea></textarea></div>
+<div class="task"><label>Hal yang ingin kami pahami lebih lanjut sebelum praktik:</label><textarea></textarea></div>
+</div>
+
+<div class="card no-print">
+<h2>Dokumen LKPD</h2>
+<button class="primary" onclick="saveData()">Simpan Jawaban</button>
+<button class="gray" onclick="loadData()">Muat Jawaban</button>
+<button class="gray" onclick="window.print()">Cetak / Simpan PDF</button>
+<button class="danger" onclick="clearData()">Kosongkan Jawaban</button>
+</div>
+</div>
+
+<script>
+function fields(){return document.querySelectorAll("input,textarea")}
+function saveData(){
+let d=[...fields()].map(x=>x.value);
+localStorage.setItem("lkpdRakitPC",JSON.stringify(d));
+alert("Jawaban berhasil disimpan di browser.");
+}
+function loadData(){
+let d=JSON.parse(localStorage.getItem("lkpdRakitPC")||"null");
+if(!d){alert("Belum ada data tersimpan.");return}
+fields().forEach((x,i)=>x.value=d[i]||"");
+alert("Jawaban berhasil dimuat.");
+}
+function clearData(){
+if(confirm("Yakin ingin mengosongkan seluruh jawaban?")){
+fields().forEach(x=>x.value="");localStorage.removeItem("lkpdRakitPC");
+}}
+</script>
+</body>
+</html>
